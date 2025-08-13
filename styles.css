@@ -1,0 +1,118 @@
+/* General reset & font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #181a1b; /* Soft charcoal */
+    color: #e0e0e0; /* Gentle light gray */
+    line-height: 1.6;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #242526, #2d2f31); /* Subtle gradient */
+    color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header h2 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 8px;
+    color: #b8b8b8;
+}
+
+/* About section with overlapping layered effect */
+.about {
+    position: relative;
+    margin: -40px 0 40px; /* Overlap upward */
+    padding: 25px;
+    background: #202223; /* Slightly lighter than body */
+    border-radius: 12px;
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.5),
+        0 -5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+/* Projects section */
+.projects {
+    display: grid;
+    gap: 30px;
+}
+
+.project {
+    background: #1e2021;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.45);
+}
+
+.project .title {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #8bb1d0; /* Soft muted blue */
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-description {
+    margin-bottom: 10px;
+    color: #cfcfcf;
+}
+
+.project .link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #9dbcd4; /* Muted soft blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project .link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    border-top: 1px solid #2e2f31;
+}
+
+.footer a {
+    color: #9dbcd4;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
